@@ -1,12 +1,77 @@
-# React + Vite
+# 🔗 React Router App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, multi-page React application built using **React Router v6**, featuring routes like Home, About, Contact, GitHub user data, and dynamic user pages. Fully deployed and accessible online.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+👉 [https://mahnoorshabbir-reactrouter.vercel.app/](https://mahnoorshabbir-reactrouter.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- 🧭 Routing with **React Router v6**
+- 📄 Pages: Home, About, Contact, Github, and dynamic User pages
+- 🧑‍💻 GitHub page with live data using `loader`
+- 🔗 Dynamic route: `/user/:userId`
+- 🖼️ TailwindCSS UI with responsive layout
+- ⚡ Nested routes using a shared layout component (`Layout.jsx`)
+- 🧱 Footer and Header components with navigation links
+
+---
+
+## 📁 Project Structure
+
+src/
+├── App.jsx
+├── Layout.jsx
+├── index.css
+├── main.jsx
+├── components/
+│ ├── header/
+│ │ ├── Header.jsx
+│ │ ├── Footer.jsx
+│ │ ├── home/Home.jsx
+│ │ ├── about/About.jsx
+│ │ ├── contact/Contact.jsx
+│ │ ├── user/User.jsx
+
+
+---
+
+## 🧠 How It Works
+
+- Uses `createBrowserRouter()` and `createRoutesFromElements()` from `react-router-dom`
+- `Layout.jsx` wraps all routes with shared header/footer
+- Dynamic routing with `/user/:userId`
+- `Github` route uses a `loader` function to fetch data before rendering
+- Tailwind CSS used for all styling (fully responsive)
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React (Vite setup)
+- 🔄 React Router v6.15+
+- 💨 Tailwind CSS
+- 🌐 GitHub API (via loader)
+- 📦 Vercel (for deployment)
+
+---
+
+## 🧪 Getting Started Locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/your-username/react-router-app.git
+
+# 2. Navigate to the project
+cd react-router-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the app
+npm run dev
